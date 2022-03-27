@@ -1,0 +1,19 @@
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 16px 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+}
+.leftNavbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+}

@@ -1,0 +1,14 @@
+
+.button {
+    margin-right: 16px;
+    text-decoration: none;
+    color: black;
+}
+.button:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
+}
+.text {
+    font-weight: bold;
+}

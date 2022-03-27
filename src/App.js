@@ -1,14 +1,18 @@
-import {Navbar} from "./components/navbar";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import {Navbar} from "./components/Navbar";
+import {Main} from './pages/Main/index'
+import {SecondPage} from "./pages/SecondPage";
 
 export const App = () => {
   return (
-    <div>
-        <Navbar isAuth={false}/>
-      <header>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <>
+      <Navbar userName={'Макс'}/>
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<Main />} />
+          <Route path={'/secondPage'} element={<SecondPage />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
